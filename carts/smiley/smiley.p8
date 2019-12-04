@@ -1,18 +1,8 @@
 pico-8 cartridge // http://www.pico-8.com
 version 18
 __lua__
-x = 64  y = 64
-function _update()
-  if (btn(0)) then x=x-1 end
-  if (btn(1)) then x=x+1 end
-  if (btn(2)) then y=y-1 end
-  if (btn(3)) then y=y+1 end
-end
+#include code.p8
 
-function _draw()
-  rectfill(0,0,127,127,5)
-  circfill(x,y,7,8)
-end
 __gfx__
 0000000000000000000000000000000000888880000000003b3b3b3b3b3b3b3b0000000000000333bbbbbbb30000000000000000000030000000000000000000
 000000000000000000000000000000000088888000000000b3b3b3b3b3b3b3b300000000000033bbb33bb3330000000000000000333303300000000000000000

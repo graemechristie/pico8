@@ -39,3 +39,15 @@ luac.out
 *.x86_64
 *.hex
 
+#pico8 shizzle
+/backup
+/bbs
+/cdata
+/cstore
+/plates
+
+config.txt
+log.txt
+sdl_controllers.txt
+
+.DS_Store
